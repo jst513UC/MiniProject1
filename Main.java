@@ -13,7 +13,7 @@ class Main
     System.out.println("Welcome to the guessing game!");
     System.out.println("Please enter any positive whole number:");
 
-    randRange = nappa.nextInt();
+    randRange = nappa.nextInt() + 1;
     randNum = randyJackson.nextInt(randRange);
     
     System.out.println("A random number to guess has been generated");
@@ -27,7 +27,7 @@ class Main
     int guessCount = 0;
     Scanner vegeta = new Scanner(System.in);
 
-    System.out.println("Please guess a number between 0 and " + ogInput);
+    System.out.println("Please guess a number between 0 and " + (ogInput - 1) + ":");
     do
     {
       userGuess = vegeta.nextInt();
